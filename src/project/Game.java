@@ -17,6 +17,8 @@ public abstract class Game {
 
     private final String name;//the title of the game
     private ArrayList<Player> players;// the players of the game
+    private int team1Score = 0;
+    private int team2Score = 0;
 
     public Game(String name) {
         this.name = name;
@@ -38,10 +40,18 @@ public abstract class Game {
     }
 
     /**
-     * @param players the players of this game
+     * @param player
      */
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
+    public void setPlayers(Player player) {
+        this.players.add(player);
+    }
+    
+    public void addteam1Score(int score){
+        this.team1Score += score;
+    }
+    
+    public void addteam2Score(int score){
+        this.team2Score += score;
     }
 
     /**
