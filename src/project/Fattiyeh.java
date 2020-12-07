@@ -14,9 +14,14 @@ package project;
 public class Fattiyeh {
     
     private int rounds;
+    private int teams;
 
     public Fattiyeh() {
         this.rounds = 13;
+    }
+
+    public int getRounds() {
+        return rounds;
     }
     
 }

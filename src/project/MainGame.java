@@ -35,6 +35,13 @@ public class MainGame {
         player4.setName(game.getPlayerName(3));
         
         System.out.println("Each player now gets 13 cards");
+        
+        playerCards(player1);
+        playerCards(player2);
+        playerCards(player3);
+        playerCards(player4);
+        
+        playerCardValues(player1);
 
     }
     
@@ -45,6 +52,22 @@ public class MainGame {
             String player = input.next();
             stage.addPlayer(player);
         }  
+    }
+    
+    public static void playerCards(Player player){
+        player.setRandomArrayList();
+        System.out.println(player.toString());
+    }
+    
+    public static void playerCardValues(Player player){
+        player.setCardValue();
+        System.out.println(player.getValue(0));
+    }
+    
+    public static void Fattiyeh(Player player1, Player player2, Player player3, Player player4){
+        for (int i = 1; i < 14; i++) {
+            
+        }
     }
  
 }

@@ -13,23 +13,23 @@ import java.util.ArrayList;
  *
  * @author Gabriel Espinoza Nov 2020
  */
-public abstract class Game {
+public abstract class Game extends Player{
 
-    private final String name;//the title of the game
+    private final String gameName;//the title of the game
     private ArrayList<Player> players;// the players of the game
     private int team1Score = 0;
     private int team2Score = 0;
 
     public Game(String name) {
-        this.name = name;
+        this.gameName = name;
         players = new ArrayList();
     }
 
     /**
      * @return the name
      */
-    public String getName() {
-        return name;
+    public String getGameName() {
+        return gameName;
     }
 
     /**
