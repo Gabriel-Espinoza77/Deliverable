@@ -11,7 +11,7 @@ package project;
  *
  * @author gabri
  */
-public class Fattiyeh {
+public class Fattiyeh extends Tarneeb {
     
     private int rounds;
     private int teams;

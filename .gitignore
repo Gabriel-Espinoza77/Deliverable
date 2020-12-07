@@ -1,1 +1,11 @@
-/build/
+# Group 4: Gabriel Espinoza, Anshul Marwaha, Ramandeep Kaur
+
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/

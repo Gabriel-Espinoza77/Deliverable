@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author gabri
  */
-public class MainGame {
+public class MainGame extends PlayingStage {
     
     
     
