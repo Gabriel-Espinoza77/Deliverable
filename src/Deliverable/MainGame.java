@@ -5,7 +5,7 @@
  * Description: Assignment Description
  */
 
-package project;
+package Deliverable;
 
 import java.util.Scanner;
 
@@ -45,12 +45,27 @@ public class MainGame extends PlayingStage {
 
     }
     
+    public static boolean checkName(String name){
+        if (name.length() >= 5) {
+            return true;
+        } 
+        return false;
+    }
+    
     public static void playersName(PlayingStage stage){
         Scanner input = new Scanner(System.in);
         for (int i = 1; i < 5; i++) {
-            System.out.printf("What is player %d's name\n", i);
-            String player = input.next();
-            stage.addPlayer(player);
+            boolean valid = false;
+            do {                
+                System.out.printf("What is player %d's name\n", i);
+                String player = input.next();
+                checkName(player);
+                if (checkName(player)) {
+                    valid = true;
+                    stage.addPlayer(player);
+                }
+            } while (!valid);
+           
         }  
     }
     
