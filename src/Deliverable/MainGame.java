@@ -15,8 +15,6 @@ import java.util.Scanner;
  */
 public class MainGame extends PlayingStage {
     
-    
-    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         PlayingStage game = new PlayingStage();
@@ -57,7 +55,7 @@ public class MainGame extends PlayingStage {
         for (int i = 1; i < 5; i++) {
             boolean valid = false;
             do {                
-                System.out.printf("What is player %d's name\n", i);
+                System.out.printf("What is player %d's name\nName must be greater than 5 letters\n", i);
                 String player = input.next();
                 checkName(player);
                 if (checkName(player)) {
